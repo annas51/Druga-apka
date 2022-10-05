@@ -1,0 +1,527 @@
+<apex:page showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" html-lang="en-US">
+
+    <style  type="text/css">
+body{
+    margin: 0;
+    padding: 0;
+    font-family: lato;
+     background-image:linear-gradient(rgba(230, 242, 255,0.8), rgba(230, 242, 255,0.8)), url("https://images.desenio.com/zoom/8452_2.jpg") ;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 100%;
+    margin-bottom: 200px;
+
+}
+
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+
+}
+
+.form-area{
+    background:transparent;
+    opacity:0.93;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 40px 20px rgb(0, 0, 0, 0.5);
+    background-color: rgba(125, 209, 235, 1);
+    background-image: linear-gradient(173deg, rgba(125, 209, 235, 1) 0%, rgba(14, 96, 136, 1) 100%);
+}
+
+.right-text h2{
+ font-family: inherit;
+	font-size: 40px;
+	letter-spacing: .5px;
+	color: white;
+	outline: none;
+	transform: translateX(0);
+	transition: all .3s ease-out;
+}
+
+
+.left-text{
+
+    padding:  50px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
+    border-right: 2px solid rgb(0, 49, 102);
+}
+
+
+.right-text{
+    margin: 60px;
+    rgb(230, 242, 255);
+
+
+}
+
+.right-text input{
+
+  display: block;
+	width: 100%;
+	margin-top: 8px;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-size: 16px;
+	line-height: 40px;
+	color:rgb(0, 49, 102);
+  background: rgb(230, 242, 255);
+  border: 1px solid rgb(0, 49, 102);
+  border-radius: 2px;
+
+}
+ul li, ol li {
+
+    padding-left: 0;
+}
+
+.right-text textarea{
+    width: 100%;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+input[name="submit"]{
+    background: rgb(230, 242, 255);
+
+    min-width: 120px;
+	margin: 20px 10px;
+	font-size: 18px;
+	line-height: 40px;
+	border: none;
+	transition: all .3s ease-out;
+
+}
+
+input[name="submit"]:hover{
+    background:linear-gradient(173deg, rgba(125, 209, 235, 1) 0%, rgba(14, 96, 136, 1) 100%);
+	background-color:rgba(125, 209, 235);
+}
+
+select {
+        padding: 14px;
+	cursor: pointer;
+	background-color: rgb(230, 242, 255);
+	list-style: none;
+    width: 110.5%;
+	margin-top: 8px;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-size: 16px;
+	line-height: 40px;
+    border: 1px solid rgb(0, 49, 102);
+    border-radius: 2px;
+
+
+      }
+
+img{
+    margin-left:25%
+
+}
+
+
+
+
+  </style>
+
+
+    <body>
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+        <div class="wrapper">
+            <div class="logo">
+                <img src="https://i.ibb.co/2crFvQF/logo-preview-rev-1.png" alt="logo-preview-rev-1"  />
+                <div class="form-area">
+                    <div class="img-area">
+                        <div class="left-text">
+                            <i class="fa fa-map-marker"></i> Address:
+                            <p>Ul. Dobra 15, 01-256 Warsaw, Poland</p>
+                            <i class="fa fa-evnvelope"></i> Email:
+                            <p>languide@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="right-text">
+                        <h2> Contact Us!</h2> <br/> <br/>
+
+
+                        <input type="hidden" name="oid" value="00D7Q000008Mgd2"/>
+                        <input type="hidden" name="retURL" value="https://britenet-a3-dev-ed--c.vf.force.com/apex/Confirm"/>
+                        <!--  ----------------------------------------------------------------------  -->
+                        <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+                        <!--  these lines if you wish to test in debug mode.                          -->
+
+                        <!--  ----------------------------------------------------------------------  -->
+
+                        <label for="first_name"></label><input placeholder="First Name" id="first_name" maxlength="80" name="first_name" size="20" type="text" /><br/>
+
+                        <label for="last_name"></label><input placeholder="Last Name" id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br/>
+
+                        <label for="email"></label><input  placeholder="Email*" id="email" maxlength="80" name="email" size="30" type="Email" required="true"/><br/>
+
+                        <label for="company"></label><input placeholder="Company" id="company" maxlength="80" name="company" size="20" type="text" /><br/>
+
+                        <label for="city"></label><input placeholder="City" id="city" maxlength="80" name="city" size="20" type="text" /><br/>
+
+                        <!--          <input placeholder="Country" type="text" name="country"  id="default" maxlength="40"  size="20" />-->
+                        <div class="field">
+                        <label for="00N7Q00000DHnYA"> </label>
+                        <select  id="00N7Q00000DHnYA" name="00N7Q00000DHnYA" title="Continent">
+
+                        <option value="">Continent</option>
+                            <option value="Asia">Asia</option>
+                            <option value="Africa">Africa</option>
+                            <option value="North America">North America</option>
+                            <option value="Europe">Europe</option>
+                            <option value="South America">South America</option>
+                            <option value="Europe">Europe</option>
+                            <option value="Australia">Australia</option>
+                        </select>
+                        </div>
+
+                        <select for="00N7Q00000DHupD" id="00N7Q00000DHupD" name="00N7Q00000DHupD" title="Country">
+                            <option value="">Country </option><option value="Afghanistan">Afghanistan</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Algeria">Algeria</option>
+                            <option value="Andorra">Andorra</option>
+                            <option value="Angola">Angola</option>
+                            <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Armenia">Armenia</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Azerbaijan">Azerbaijan</option>
+                            <option value="Bahamas">Bahamas</option>
+                            <option value="Bahrain">Bahrain</option>
+<!--                            <option value="Burkina Faso">Burkina Faso</option>-->
+<!--                            <option value="Burundi">Burundi</option>-->
+<!--                            <option value="Cabo Verde/Cape Verde">Cabo Verde/Cape Verde</option>-->
+<!--                            <option value="Cambodia">Cambodia</option>-->
+<!--                            <option value="Cameroon">Cameroon</option>-->
+<!--                            <option value="Canada">Canada</option>-->
+<!--                            <option value="Central African Republic">Central African Republic</option>-->
+<!--                            <option value="Chad">Chad</option>-->
+<!--                            <option value="Chile">Chile</option>-->
+<!--                            <option value="China">China</option>-->
+<!--                            <option value="Colombia">Colombia</option>-->
+<!--                            <option value="Comoros">Comoros</option>-->
+<!--                            <option value="Congo/Republic of the Congo">Congo/Republic of the Congo</option>-->
+<!--                            <option value="Costa Rica">Costa Rica</option>-->
+<!--                            <option value="Croatia">Croatia</option>-->
+<!--                            <option value="Cuba">Cuba</option>-->
+<!--                            <option value="Cyprus">Cyprus</option>-->
+<!--                            <option value="Czech Republic">Czech Republic</option>-->
+<!--                            <option value="Democratic Republic of the Congo">Democratic Republic of the Congo</option>-->
+<!--                            <option value="Denmark">Denmark</option>-->
+<!--                            <option value="Djibouti">Djibouti</option>-->
+<!--                            <option value="Dominica">Dominica</option>-->
+<!--                            <option value="Dominican Republic">Dominican Republic</option>-->
+<!--                            <option value="Ecuador">Ecuador</option>-->
+<!--                            <option value="Egypt">Egypt</option>-->
+<!--                            <option value="El Salvador">El Salvador</option>-->
+<!--                            <option value="Equatorial Guinea">Equatorial Guinea</option>-->
+<!--                            <option value="Eritrea">Eritrea</option>-->
+<!--                            <option value="Estonia">Estonia</option>-->
+<!--                            <option value="Eswatini (formerly Swaziland)">Eswatini (formerly Swaziland)</option>-->
+<!--                            <option value="Ethiopia">Ethiopia</option>-->
+                            <option value="Fiji">Fiji</option>
+<!--                            <option value="Finland">Finland</option>-->
+<!--                            <option value="France">France</option>-->
+<!--                            <option value="Gabon">Gabon</option>-->
+<!--                            <option value="Gambia">Gambia</option>-->
+<!--                            <option value="Georgia">Georgia</option>-->
+<!--                            <option value="Germany">Germany</option>-->
+<!--                            <option value="Ghana">Ghana</option>-->
+<!--                            <option value="Greece">Greece</option>-->
+<!--                            <option value="Grenada">Grenada</option>-->
+<!--                            <option value="Guatemala">Guatemala</option>-->
+<!--                            <option value="Guinea">Guinea</option>-->
+<!--                            <option value="Guinea-Bissau">Guinea-Bissau</option>-->
+<!--                            <option value="Guyana">Guyana</option>-->
+<!--                            <option value="Haiti">Haiti</option>-->
+<!--                            <option value="Honduras">Honduras</option>-->
+<!--                            <option value="Hong Kong">Hong Kong</option>-->
+<!--                            <option value="Hungary">Hungary</option>-->
+<!--                            <option value="Iceland">Iceland</option>-->
+<!--                            <option value="India">India</option>-->
+<!--                            <option value="Indonesia">Indonesia</option>-->
+<!--                            <option value="Iran">Iran</option>-->
+<!--                            <option value="Iraq">Iraq</option>-->
+<!--                            <option value="Ireland">Ireland</option>-->
+<!--                            <option value="Israel">Israel</option>-->
+<!--                            <option value="Italy">Italy</option>-->
+<!--                            <option value="Ivory Coast">Ivory Coast</option>-->
+<!--                            <option value="Jamaica">Jamaica</option>-->
+<!--                            <option value="Japan">Japan</option>-->
+<!--                            <option value="Jordan">Jordan</option>-->
+<!--                            <option value="Kazakhstan">Kazakhstan</option>-->
+<!--                            <option value="Kenya">Kenya</option>-->
+                            <option value="Kiribati">Kiribati</option>
+<!--                            <option value="Kuwait">Kuwait</option>-->
+<!--                            <option value="Kyrgyzstan">Kyrgyzstan</option>-->
+<!--                            <option value="Laos">Laos</option>-->
+<!--                            <option value="Latvia">Latvia</option>-->
+<!--                            <option value="Lebanon">Lebanon</option>-->
+<!--                            <option value="Lesotho">Lesotho</option>-->
+<!--                            <option value="Liberia">Liberia</option>-->
+<!--                            <option value="Libya">Libya</option>-->
+<!--                            <option value="Liechtenstein">Liechtenstein</option>-->
+<!--                            <option value="Lithuania">Lithuania</option>-->
+<!--                            <option value="Luxembourg">Luxembourg</option>-->
+<!--                            <option value="Macau">Macau</option>-->
+<!--                            <option value="Madagascar">Madagascar</option>-->
+<!--                            <option value="Malawi">Malawi</option>-->
+<!--                            <option value="Malaysia">Malaysia</option>-->
+<!--                            <option value="Maldives">Maldives</option>-->
+<!--                            <option value="Mali">Mali</option>-->
+<!--                            <option value="Malta">Malta</option>-->
+<!--                            <option value="Marshall Islands">Marshall Islands</option>-->
+<!--                            <option value="Mauritania">Mauritania</option>-->
+<!--                            <option value="Mauritius">Mauritius</option>-->
+<!--                            <option value="Mexico">Mexico</option>-->
+<!--                            <option value="Micronesia">Micronesia</option>-->
+<!--                            <option value="Moldova">Moldova</option>-->
+<!--                            <option value="Monaco">Monaco</option>-->
+<!--                            <option value="Mongolia">Mongolia</option>-->
+<!--                            <option value="Montenegro">Montenegro</option>-->
+<!--                            <option value="Morocco">Morocco</option>-->
+<!--                            <option value="Mozambique">Mozambique</option>-->
+<!--                            <option value="Myanmar">Myanmar</option>-->
+<!--                            <option value="Namibia">Namibia</option>-->
+<!--                            <option value="Nauru">Nauru</option>-->
+<!--                            <option value="Nepal">Nepal</option>-->
+<!--                            <option value="Netherlands">Netherlands</option>-->
+<!--                            <option value="New Zealand">New Zealand</option>-->
+<!--                            <option value="Nicaragua">Nicaragua</option>-->
+<!--                            <option value="Niger">Niger</option>-->
+<!--                            <option value="Nigeria">Nigeria</option>-->
+<!--                            <option value="North Korea">North Korea</option>-->
+<!--                            <option value="North Macedonia">North Macedonia</option>-->
+<!--                            <option value="Norway">Norway</option>-->
+<!--                            <option value="Oman">Oman</option>-->
+<!--                            <option value="Pakistan">Pakistan</option>-->
+<!--                            <option value="Palau">Palau</option>-->
+<!--                            <option value="Palestine">Palestine</option>-->
+<!--                            <option value="Panama">Panama</option>-->
+<!--                            <option value="Papua New Guinea">Papua New Guinea</option>-->
+<!--                            <option value="Paraguay">Paraguay</option>-->
+<!--                            <option value="Peru">Peru</option>-->
+<!--                            <option value="Philippines">Philippines</option>-->
+<!--                            <option value="Poland">Poland</option>-->
+<!--                            <option value="Portugal">Portugal</option>-->
+<!--                            <option value="Qatar">Qatar</option>-->
+<!--                            <option value="Romania">Romania</option>-->
+<!--                            <option value="Russia">Russia</option>-->
+<!--                            <option value="Rwanda">Rwanda</option>-->
+<!--                            <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>-->
+<!--                            <option value="Saint Lucia">Saint Lucia</option>-->
+<!--                            <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>-->
+<!--                            <option value="Samoa">Samoa</option>-->
+<!--                            <option value="San Marino">San Marino</option>-->
+<!--                            <option value="Sao Tome and Principe">Sao Tome and Principe</option>-->
+<!--                            <option value="Saudi Arabia">Saudi Arabia</option>-->
+<!--                            <option value="Senegal">Senegal</option>-->
+<!--                            <option value="Serbia">Serbia</option>-->
+<!--                            <option value="Seychelles">Seychelles</option>-->
+<!--                            <option value="Sierra Leone">Sierra Leone</option>-->
+<!--                            <option value="Singapore">Singapore</option>-->
+<!--                            <option value="Slovakia">Slovakia</option>-->
+<!--                            <option value="Slovenia">Slovenia</option>-->
+<!--                            <option value="Solomon Islands">Solomon Islands</option>-->
+<!--                            <option value="Somalia">Somalia</option>-->
+<!--                            <option value="South Africa">South Africa</option>-->
+<!--                            <option value="South Korea">South Korea</option>-->
+<!--                            <option value="South Sudan">South Sudan</option>-->
+<!--                            <option value="Spain">Spain</option>-->
+<!--                            <option value="Sri Lanka">Sri Lanka</option>-->
+<!--                            <option value="Sudan">Sudan</option>-->
+<!--                            <option value="Suriname">Suriname</option>-->
+<!--                            <option value="Sweden">Sweden</option>-->
+<!--                            <option value="Switzerland">Switzerland</option>-->
+<!--                            <option value="Syria">Syria</option>-->
+<!--                            <option value="Taiwan">Taiwan</option>-->
+<!--                            <option value="Tajikistan">Tajikistan</option>-->
+<!--                            <option value="Tanzania">Tanzania</option>-->
+<!--                            <option value="Thailand">Thailand</option>-->
+<!--                            <option value="Timor-Leste">Timor-Leste</option>-->
+<!--                            <option value="Togo">Togo</option>-->
+<!--                            <option value="Tonga">Tonga</option>-->
+<!--                            <option value="Trinidad and Tobago">Trinidad and Tobago</option>-->
+<!--                            <option value="Tunisia">Tunisia</option>-->
+<!--                            <option value="Turkey">Turkey</option>-->
+<!--                            <option value="Turkmenistan">Turkmenistan</option>-->
+<!--                            <option value="Tuvalu">Tuvalu</option>-->
+<!--                            <option value="Uganda">Uganda</option>-->
+<!--                            <option value="Ukraine">Ukraine</option>-->
+<!--                            <option value="United Arab Emirates">United Arab Emirates</option>-->
+<!--                            <option value="United Kingdom">United Kingdom</option>-->
+<!--                            <option value="United States of America">United States of America</option>-->
+<!--                            <option value="Uruguay">Uruguay</option>-->
+<!--                            <option value="Uzbekistan">Uzbekistan</option>-->
+<!--                            <option value="Vanuatu">Vanuatu</option>-->
+<!--                            <option value="Venezuela">Venezuela</option>-->
+<!--                            <option value="Vietnam">Vietnam</option>-->
+<!--                            <option value="Yemen">Yemen</option>-->
+<!--                            <option value="Zambia">Zambia</option>-->
+<!--                            <option value="Zimbabwe">Zimbabwe</option>-->
+                        </select>
+                        <!--       <div class="continent">-->
+                        <!--          <ul>-->
+                        <!--            <li><a href="#">Kontynent</a>-->
+                        <!--            <ul class="dropdown-1">-->
+                        <!--              <ul class="dropdown-2">-->
+                        <!--                <li><a href="#">Kraj</a></li>-->
+                        <!--                <li><a href="#">Kraj</a></li>-->
+                        <!--                <li><a href="#">Kraj</a></li>-->
+                        <!--              </ul>-->
+                        <!--            </ul>-->
+                        <!--            </li>-->
+
+                        <!--           </ul>-->
+                        <!--       </div>-->
+                        <input type="submit" name="submit" value="Send"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <style type='text/css'>
+	.embeddedServiceHelpButton .helpButton .uiButton {
+		background-color: #0F80A4;
+	}
+	.embeddedServiceHelpButton .helpButton .uiButton:focus {
+		outline: 1px solid #0F80A4;
+	}
+
+	.embeddedServiceHelpButton .uiButton .helpButtonLabel .message {
+    white-space: normal;
+}
+.message {
+    background-color: #0F80A4;
+    border-style: hidden;
+    color: #000;
+    padding: 6px 8px 6px 6px;
+    margin: 4px 20px;
+}
+
+
+
+
+</style>
+
+
+
+    <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+    <script type='text/javascript'>
+	var initESW = function(gslbBaseURL) {
+		embedded_svc.settings.displayHelpButton = true; //Or false
+		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+
+		embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
+		embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
+
+		embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
+		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
+
+		// Settings for Chat
+		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
+			// Returns a valid button ID.
+		//};
+		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
+		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
+		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
+
+		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+		embedded_svc.settings.entryFeature = 'LiveAgent';
+
+		embedded_svc.init(
+			'https://britenet-a3-dev-ed.my.salesforce.com',
+			'https://britenet-a3-dev-ed.my.salesforce-sites.com/LanGuide',
+			gslbBaseURL,
+			'00D7Q000008Mgd2',
+			'Chat',
+			{
+				baseLiveAgentContentURL: 'https://c.la2-c1-cdg.salesforceliveagent.com/content',
+				deploymentId: '5727Q000000HW5W',
+				buttonId: '5737Q000000HWss',
+				baseLiveAgentURL: 'https://d.la2-c1-cdg.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'Chat',
+				isOfflineSupportEnabled: true
+			}
+		);
+	};
+
+	if (!window.embedded_svc) {
+		var s = document.createElement('script');
+		s.setAttribute('src', 'https://britenet-a3-dev-ed.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.onload = function() {
+			initESW(null);
+		};
+		document.body.appendChild(s);
+	} else {
+		initESW('https://service.force.com');
+	}
+</script>
+    </body>
+    <script>
+  const leadSourceDetailOptions = {
+    'Asia': ['Afghanistan', 'Anrmenia', 'Azerbaijan'],
+    'Africa': [ 'Algeria', 'Angola', 'Benin', 'Botswana'],
+    'North America': ['Antigua and Barbuda', 'Bahamas', 'Barbados', 'Belize', 'Canada', 'Costa Rica'],
+    'South America': ['Argentina', 'Boliwia'],
+    'Europe':['Albania', 'Andorra' , 'Austria'],
+    'Australia':['Australia', 'Fiji', 'Kiribati'],
+  };
+
+  function removeLeadSourceDetailOptions() {
+    const detailSelect = document.getElementById('00N7Q00000DHupD');
+    const options = detailSelect.querySelectorAll('option');
+    if (options && options.length > 0) {
+      options.forEach((option) => {
+        option.remove();
+      });
+    }
+  }
+
+  function createNoneOption() {
+    const option = document.createElement('option');
+    option.textContent = '--None--';
+    option.value = '';
+    return option;
+  }
+
+  function filterOptions() {
+    removeLeadSourceDetailOptions();
+    const leadSourceSelect = document.getElementById('00N7Q00000DHnYA');
+    const leadSourceSelectOptions = leadSourceSelect.options;
+    const selectedOption = leadSourceSelectOptions[leadSourceSelect.selectedIndex];
+
+    if (selectedOption && selectedOption.value && leadSourceDetailOptions[selectedOption.value]) {
+      let options = leadSourceDetailOptions[selectedOption.value].map((opt) => {
+        const el = document.createElement('option');
+        el.textContent = opt;
+        el.value = opt;
+        return el;
+      });
+
+      options = [createNoneOption()].concat(options);
+      const leadSourceDetailSelect = document.getElementById('00N7Q00000DHupD');
+      options.forEach((opt) => {
+        leadSourceDetailSelect.appendChild(opt);
+      });
+    }
+  }
+
+  document.getElementById('00N7Q00000DHnYA').addEventListener('change', () => {
+    filterOptions();
+  });
+
+  removeLeadSourceDetailOptions();
+</script>
+</apex:page>
